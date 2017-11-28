@@ -1,0 +1,273 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+
+<html>
+    <head>                        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AB10</title>
+
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+        <!--Logo de arriba en el navegador-->
+        <link rel="shortcut icon" type="image/x-icon" href="<c:url value="/resource/image/favicon.ico"/>" />         
+
+
+        <!-- REQUIRED CSS SCRIPTS -->
+        <!--CSS bases-->
+        <%@ include file="../include/includecss.jsp" %>         
+        <!--Tablas-->
+        <!--<link rel="stylesheet" href="<c:url value="/resource/libs/bootstrap-3.3.7/css/dataTables.bootstrap.css" />" />-->
+        <!-- bootstrap datepicker -->  
+        <link rel="stylesheet" href="<c:url value="/resource/libs/datepicker-1.0.0/datepicker3.css" />" />                
+        <!-- REQUIRED CSS SCRIPTS -->        
+
+        <!-- REQUIRED JS SCRIPTS -->
+        <!--JS bases-->
+        <%@ include file="../include/includejs.jsp" %> 
+        <!-- bootstrap datepicker -->
+        <script src="<c:url value="/resource/libs/datepicker-1.0.0/bootstrap-datepicker.js" />"></script>
+        <!-- REQUIRED JS SCRIPTS -->
+
+    </head>
+
+    <body class="hold-transition skin-blue fixed sidebar-mini">
+        <div class="wrapper">
+            <%@ include file="../template/header.jsp" %> 
+                                    
+            <!-- ACA Contenido dinamico de la aplicacion -->
+            <div class="content-wrapper ">                            
+                                
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>
+                        Pacientes
+                        <small>Description opcional</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+                        <li class="active">Here</li>
+                    </ol>
+                </section>
+
+                <!-- Main content -->
+                <section class="content">
+
+                    
+                     <div class="alert alert-error">
+                    <button class = "close" data-dismiss = "alert"><span>&times;</span></button>
+                    - Debe agregar la fecha</br>
+                    - Hola</br>
+                    - Como esats
+                </div>
+                <div class="alert alert-warning">
+                    <button class = "close" data-dismiss = "alert"><span>&times;</span></button>
+                    - Debe agregar la fecha</br>
+                    - Hola</br>
+                    - Como esats
+                </div>
+                <div class="alert alert-success">
+                    <button class = "close" data-dismiss = "alert"><span>&times;</span></button>
+                    - Debe agregar la fecha</br>
+                    - Hola</br>
+                    - Como esats
+                </div>
+                <div class="alert alert-info">
+                    <button class = "close" data-dismiss = "alert"><span>&times;</span></button>
+                    - Debe agregar la fecha</br>
+                    - Hola</br>
+                    - Como esats
+                </div>
+
+
+                    <!-- Comienzo formularios de prueba-->
+
+                    <!-- Custom Tabs -->
+                    <div class="nav-tabs-custom">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab_1" data-toggle="tab">Nuevo</a></li>
+                            <li><a href="#tab_2" data-toggle="tab">Listado</a></li>
+
+                            <li class="pull-right"><a href="#" class="text-muted"><i class="fa fa-gear"></i></a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab_1">
+                                <!--                <b>How to use:</b>-->
+
+                                <!-- general form elements -->
+                                <div class="box box-primary">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">Datos personales</h3>
+                                    </div>                                    
+                                    <!-- /.box-header -->
+                                    <!-- form start -->
+                                    <form role="form">
+                                        <div class="box-body">
+                                            <div class="form-group">
+                                                <label for="fnombre">Nombre</label>
+                                                <input type="text" class="form-control" id="fnombre" placeholder="Nombre">
+                                            </div>     
+                                            <div class="form-group">
+                                                <label for="fapellido">Apellido</label>
+                                                <input type="text" class="form-control" id="fapellido" placeholder="Apellido">
+                                            </div>     
+                                            <div class="form-group">
+                                                <label>Fecha</label>
+
+                                                <div class="input-group date">
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control pull-right" id="datepicker">
+                                                </div>
+                                                <!-- /.input group -->
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="fdni">DNI</label>
+                                                <input type="text" class="form-control" id="fdni" placeholder="00.000.000">
+                                            </div>     
+                                            <div class="form-group">
+                                                <label for="focu">Ocupacion</label>
+                                                <input type="text" class="form-control" id="focu" placeholder="Ocupacion">
+                                            </div>     
+                                            <div class="form-group">
+                                                <label for="fpro">Procedencia</label>
+                                                <input type="text" class="form-control" id="fpro" placeholder="Lugar de nacimiento">
+                                            </div>  
+                                            <div class="checkbox">      
+                                                <label>
+                                                    <input type="checkbox"> Diestro
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="ftel">Telefono</label>
+                                                <input type="text" class="form-control" id="ftel" placeholder="Telefono">
+                                            </div>  
+                                            <div class="form-group">
+                                                <label for="femial">Email</label>
+                                                <input type="email" class="form-control" id="femial" placeholder="Email">
+                                            </div>  
+                                            <!-- select -->
+                                            <div class="form-group">
+                                                <label>Educacion</label>
+                                                <select class="form-control">
+                                                    <option>Sin formacion</option>
+                                                    <option>Primario completo</option>
+                                                    <option>Primario incompleto</option>
+                                                    <option>Secundario completo</option>
+                                                    <option>Secundario incompleto</option>
+                                                    <option>Terciario completo</option>
+                                                    <option>Terciario incompleto</option>
+                                                    <option>Univercitario completo</option>
+                                                    <option>Univercitario incompleto</option>
+                                                    <option>Primario completo</option>
+                                                    <option>Primario incompleto</option>
+                                                </select>
+                                            </div>  
+
+                                            <!--                            <div class="form-group">
+                                                                            <label for="exampleInputFile">File input</label>
+                                                                            <input type="file" id="exampleInputFile">
+                                            
+                                                                            <p class="help-block">Example block-level help text here.</p>
+                                                                        </div>                            -->
+                                        </div>
+                                        <!-- /.box-body -->
+
+                                        <div class="box-footer">
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- /.box -->
+                            </div>
+                            <!-- /.tab-pane -->
+                            <div class="tab-pane" id="tab_2">
+                                <div class="box">
+                                    <div class="box-header">
+                                        <h3 class="box-title">Listado de pacientes</h3>
+                                    </div>
+                                    <!-- /.box-header -->
+                                    <div class="box-body">
+                                        <table id="example1" class="table table-bordered table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Nombre</th>
+                                                    <th>Apellido</th>
+                                                    <th>DNI</th>
+                                                    <th>Ocupacion</th>
+                                                    <th>Procedencia</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Vanesa</td>
+                                                    <td>Benites</td>
+                                                    <td>3099822</td>
+                                                    <td>Informatico</td>
+                                                    <td>Bs. As.</td>
+                                                </tr>                                
+                                                <tr>
+                                                    <td>Sebastian</td>
+                                                    <td>Lopez</td>
+                                                    <td>3032822</td>
+                                                    <td>Autonomo</td>
+                                                    <td>San Martin de los andes</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Norma</td>
+                                                    <td>Pedernera</td>
+                                                    <td>1099822</td>
+                                                    <td>Informatico</td>
+                                                    <td>Cordoba</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Alberto</td>
+                                                    <td>Martinez</td>
+                                                    <td>1653392</td>
+                                                    <td>Empleado</td>
+                                                    <td>La Carlota</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Marisa</td>
+                                                    <td>Arias</td>
+                                                    <td>12990122</td>
+                                                    <td>Lejistalor</td>
+                                                    <td>Bs. As.</td>
+                                                </tr>                                 
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <th>Nombre</th>
+                                                    <th>Apellido</th>
+                                                    <th>DNI</th>
+                                                    <th>Ocupacion</th>
+                                                    <th>Procedencia</th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                    <!-- /.box-body -->
+                                </div>
+                                <!-- /.box -->
+                            </div>            
+                            <!-- /.tab-pane -->
+                        </div>
+                        <!-- /.tab-content -->
+                    </div>
+
+                    <!-- Comienzo formularios de prueba-->
+
+                </section>
+
+            </div>
+            <!--  /.ACA Contenido dinamico de la aplicacion -->      
+
+            <%@ include file="../template/footer.jsp" %>
+        </div>
+        <!-- ./wrapper -->
+
+    </body>
+</html>

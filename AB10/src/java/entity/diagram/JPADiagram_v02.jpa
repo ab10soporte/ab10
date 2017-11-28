@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xs="false" id="_149507412076022" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd">
+    <jpa:package>entity</jpa:package>
+    <jpa:entity xre="false" sm="false" abstract="false" class="User" visibile="true" minimized="true" rootElement="_149507412076022" id="_1495074132789">
+        <jpa:attributes>
+            <basic attribute-type="String" visibile="true" name="nombre" id="_149507420653027">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="100" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="email" id="_149507429941228">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="100" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="clave" id="_149507433443929">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="100" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="java.sql.Timestamp" visibile="true" name="fecha" id="_149507433666830">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="100" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="boolean" visibile="true" name="activo" id="_149507455069431">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="boolean" visibile="true" name="eliminado" id="_149507455082232">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <jpa:id attribute-type="Integer" visibile="true" name="id" id="_149507416284426">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:entity xre="false" sm="false" abstract="false" class="Eval" visibile="true" minimized="true" rootElement="_149507412076022" id="_1495074693993">
+        <jpa:attributes>
+            <basic attribute-type="String" visibile="true" name="legajo" id="_149507472722136">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="3" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="java.sql.Timestamp" visibile="true" name="fecha" id="_149507472816437">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="derivado" id="_149507472837338">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="evaluador" id="_149507472856539">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="apatologicos" id="_149507507537940">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="afamiliares" id="_149507507554641">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="htoxicos" id="_149507507572942">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="aactual" id="_149507507591343">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="hclinica" id="_149507507608144">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="sactual" id="_149507507623345">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="ecomplementarios" id="_149507507640246">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="medicacion" id="_149507507659447">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="conducta" id="_149507507677748">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="eneuropsicologica" id="_149507524852849">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="pacdni" id="_149507524868850">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="pacnombre" id="_149507524883351">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="java.sql.Timestamp" visibile="true" name="pacfecnac" id="_149507524920852">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="ocupacion" id="_149507524936053">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="procedencia" id="_149507558637454">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="mano" id="_149507558655055">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="email" id="_149507558668656">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="educacion" id="_149507602760257">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="estado" id="_149507602786658">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="boolean" visibile="true" name="eliminado" id="_149507602809059">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="pactel" id="_150190874547817">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="userid" id="_150225070815710">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="edualc" id="_15040298204909">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255"/>
+            </basic>
+            <jpa:id attribute-type="int" visibile="true" name="id" id="_149507470790034">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:entity xre="false" sm="false" abstract="false" class="Tavec" visibile="true" minimized="true" rootElement="_149507412076022" id="_1495077101656">
+        <jpa:attributes>
+            <basic attribute-type="String" visibile="true" name="legajo" id="_150120889655710">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="3" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="java.sql.Timestamp" visibile="true" name="fecha" id="_150120889783511">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="d01RIA1" id="_150120889803212">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="d02RIA5" id="_150120890582913">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="d03RIAT" id="_150120941545014">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="d04RIB" id="_150120941562115">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="d08RLCP" id="_150120941584016">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="d09RCICP" id="_150120941604317">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="d10RLLP" id="_150120941624618">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="d11RCILP" id="_150120941640319">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="d20P" id="_150120941657520">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="d21IRL" id="_150120941696521">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic optional="false" attribute-type="int" visibile="true" name="d22IRCI" id="_150120941723122">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="d23RecAc" id="_150120941738723">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="d24FP" id="_150120941766824">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="d25Discrim" id="_150120958874625">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <jpa:id attribute-type="int" visibile="true" name="id" id="_15012088843329">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:entity xre="false" sm="false" abstract="false" class="Report" visibile="true" minimized="true" rootElement="_149507412076022" id="_1501387364653">
+        <jpa:attributes>
+            <basic attribute-type="java.sql.Timestamp" visibile="true" name="fechapago" id="_150138740964111">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="legajo" id="_150138741221912">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="archivo" id="_150138747317913">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <jpa:id attribute-type="int" visibile="true" name="id" id="_150138737610210">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:entity xre="false" sm="false" abstract="false" class="Tfv" visibile="true" minimized="true" rootElement="_149507412076022" id="_1503654605754">
+        <jpa:attributes>
+            <basic attribute-type="String" visibile="true" name="legajo" id="_150365462970510">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="3"/>
+            </basic>
+            <basic attribute-type="java.sql.Timestamp" visibile="true" name="fecha" id="_150365463062711">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="tfvf" id="_150365463129912">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="tfvs" id="_150365463148713">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="ealc" id="_150403041479018">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true"/>
+            </basic>
+            <jpa:id attribute-type="int" visibile="true" name="id" id="_15036546261749">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true"/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:entity xre="false" sm="false" abstract="false" class="TmtB" visibile="true" minimized="false" rootElement="_149507412076022" id="_1505051203082">
+        <jpa:attributes>
+            <basic attribute-type="String" visibile="true" name="legajo" id="_150505121673811">
+                <jpa:column unique="true" nullable="true" insertable="true" updatable="true" length="3"/>
+            </basic>
+            <basic attribute-type="java.sql.Timestamp" visibile="true" name="fecha" id="_150505121720712">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="ensayob" id="_150505121741013">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="pruebab" id="_150505121756614">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="ealc" id="_150505121778515">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="ocup" id="_150505121800316">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true"/>
+            </basic>
+            <jpa:id attribute-type="int" visibile="true" name="id" id="_150505121303310">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true"/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:entity xre="false" sm="false" abstract="false" class="TmtA" visibile="true" minimized="false" rootElement="_149507412076022" id="_1506422173003">
+        <jpa:attributes>
+            <basic attribute-type="String" visibile="true" name="legajo" id="_150642218767512">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="3"/>
+            </basic>
+            <basic attribute-type="java.sql.Timestamp" visibile="true" name="fecha" id="_150642218787813">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="ensayoa" id="_150642218800314">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="pruebaa" id="_150642218812815">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255"/>
+            </basic>
+            <basic attribute-type="int" visibile="true" name="ealc" id="_150642218826916">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255"/>
+            </basic>
+            <jpa:id attribute-type="int" visibile="true" name="id" id="_150642218609711">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true"/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:diagram id="_149507412076023">
+        <plane elementRef="_149507412076022" id="_149507412076024_p">
+            <shape elementRef="_1495074132789" id="_1495074132789_gui">
+                <Bounds x="19.0" y="17.0" width="130.0" height="24.0"/>
+            </shape>
+            <shape elementRef="_1495074693993" id="_1495074693993_gui">
+                <Bounds x="19.0" y="228.0" width="156.0" height="24.0"/>
+            </shape>
+            <shape elementRef="_1495077101656" id="_1495077101656_gui">
+                <Bounds x="188.0" y="164.0" width="132.0" height="24.0"/>
+            </shape>
+            <shape elementRef="_1501387364653" id="_1501387364653_gui">
+                <Bounds x="161.0" y="17.0" width="136.0" height="24.0"/>
+            </shape>
+            <shape elementRef="_1503654605754" id="_1503654605754_gui">
+                <Bounds x="332.0" y="17.0" width="130.0" height="24.0"/>
+            </shape>
+            <shape elementRef="_1505051203082" id="_1505051203082_gui">
+                <Bounds x="332.0" y="214.0" width="128.0" height="197.0"/>
+            </shape>
+            <shape elementRef="_1506422173003" id="_1506422173003_gui">
+                <Bounds x="506.0" y="17.0" width="128.0" height="176.0"/>
+            </shape>
+        </plane>
+    </jpa:diagram>
+</jpa:entity-mappings>

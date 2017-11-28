@@ -1,0 +1,17 @@
+/*
+Resumen
+
+sb-admin.css: me pone en vertical el menu
+
+*/
+
+/* Ejemplo */
+.clase{
+    background-color: #ff0000;
+}
+
+.loading{
+    background: url("..image/loading.gif"); display: block;width: 640px;height: 480px;position: fixed;left: 50%;top: 50%;margin-left: -150px;margin-top: -150px;z-index: 99;
+}
+
+/*.loading{background: url("../img/loading.gif"); display: block;width: 640px;height: 480px;position: fixed;left: 50%;top: 50%;margin-left: -150px;margin-top: -150px;z-index: 99;}*/

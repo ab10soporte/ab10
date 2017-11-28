@@ -1,0 +1,36 @@
+
+	  html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt; background-color:white }
+	  table { border-collapse:collapse; page-break-after:always }
+	  .gridlines td { border:1px dotted black }
+	  .gridlines th { border:1px dotted black }
+	  .b { text-align:center }
+	  .e { text-align:center }
+	  .f { text-align:right }
+	  .inlineStr { text-align:left }
+	  .n { text-align:right }
+	  .s { text-align:left }
+	  td.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+	  th.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+	  td.style1 { vertical-align:top; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Times New Roman'; font-size:11.5pt; background-color:white }
+	  th.style1 { vertical-align:top; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Times New Roman'; font-size:11.5pt; background-color:white }
+	  td.style2 { vertical-align:top; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Times New Roman'; font-size:11.5pt; background-color:white }
+	  th.style2 { vertical-align:top; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Times New Roman'; font-size:11.5pt; background-color:white }
+	  td.style3 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Times New Roman'; font-size:11.5pt; background-color:#D9DCE1 }
+	  th.style3 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Times New Roman'; font-size:11.5pt; background-color:#D9DCE1 }
+	  td.style4 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Times New Roman'; font-size:11.5pt; background-color:#D9DCE1 }
+	  th.style4 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Times New Roman'; font-size:11.5pt; background-color:#D9DCE1 }
+	  table.sheet0 col.col0 { width:50.15555498pt }
+	  table.sheet0 col.col1 { width:121.9999986pt }
+	  table.sheet0 col.col2 { width:121.9999986pt }
+	  table.sheet0 col.col3 { width:121.9999986pt }
+	  table.sheet0 col.col4 { width:121.9999986pt }
+	  table.sheet0 col.col5 { width:121.9999986pt }
+	  table.sheet0 col.col6 { width:121.9999986pt }
+	  table.sheet0 tr { height:15pt }
+	  table.sheet0 tr.row2 { height:30pt }
+	  table.sheet0 tr.row3 { height:30pt }
+	  table.sheet0 tr.row4 { height:30pt }
+	  table.sheet0 tr.row5 { height:30pt }
+          
+          @page { left-margin: 1.25in; right-margin: 1.25in; top-margin: 1in; bottom-margin: 0.791666666666667in; }
+body { left-margin: 1.25in; right-margin: 1.25in; top-margin: 1in; bottom-margin: 0.791666666666667in; }
